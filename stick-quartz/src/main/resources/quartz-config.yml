@@ -1,0 +1,33 @@
+---
+# quartz 配置
+org:
+  quartz:
+    # Main Scheduler Properties
+    scheduler:
+      instanceName: BifrostMasterScheduler
+      instanceId: AUTO
+    # Configure JobStore
+    jobStore:
+      class: org.quartz.impl.jdbcjobstore.JobStoreTX
+      driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+      tablePrefix: QRTZ_
+      isClustered: true
+      clusterCheckinInterval: 20000
+      dataSource: myDS
+    # Configure DataSource
+    dataSource:
+      myDS:
+        connectionProvider:
+          class: com.derek.stick.quartz.provider.DruidConnectionProvider
+        driver: com.mysql.jdbc.Driver
+        URL: ${spring.datasource.url}
+        user: ${spring.datasource.username}
+        password: ${spring.datasource.password}
+        initialSize: 3
+        maxActive: 30
+    # Configure ThreadPool
+    threadPool:
+      class: org.quartz.simpl.SimpleThreadPool
+      threadCount: 20
+      threadPriority: 5
+      threadsInheritContextClassLoaderOfInitializingThread: true

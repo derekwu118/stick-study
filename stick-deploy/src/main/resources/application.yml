@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: stick-study
+server:
+  port: 9999
+management:
+  port: 8888
