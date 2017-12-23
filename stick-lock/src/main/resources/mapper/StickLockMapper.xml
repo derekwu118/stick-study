@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.derek.stick.lock.mysql.dal.StickLockDAO">
+
+    <resultMap id="BaseResultMap" type="com.derek.stick.lock.mysql.entity.StickLockDO">
+        <id column="id" property="id"/>
+        <result column="gmt_create" property="gmtCreate"/>
+        <result column="gmt_modified" property="gmtModified"/>
+        <result column="lock_obj" property="lockObj"/>
+        <result column="expire_duration" property="expireDuration"/>
+        <result column="expire_time" property="expireTime"/>
+    </resultMap>
+
+    <parameterMap id="LockDO" type="com.derek.stick.lock.mysql.entity.StickLockDO"/>
+
+    <sql id="BaseColumnList">
+        `id`, `gmt_create`, `gmt_modified`, `lock_obj`, `expire_duration`, `expire_time`
+    </sql>
+
+    <insert id="addLock" parameterMap="LockDO">
+        INSERT INTO `stick_lock` (
+          `gmt_create`,
+          `gmt_modified`,
+          `lock_obj`,
+          `expire_duration`,
+          `exipre_time`
+        )VALUES (
+          now(),
+          now(),
+          #{lockObj},
+          #{expireDuration},
+          #{expireTime}
+        )
+    </insert>
+
+    <delete id="removeLock" parameterType="java.lang.String">
+        DELETE FROM `stick_lock` WHERE `lock_obj` = #{lockObj}
+    </delete>
+
+    <select id="getLock" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="BaseColumnList"/>
+        FROM `stick_lock`
+        WHERE `lock_obj` = #{lockObj}
+    </select>
+
+</mapper>
