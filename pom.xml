@@ -50,6 +50,7 @@
         <quartz.version>2.2.3</quartz.version>
         <spring-context-support.version>4.3.9.RELEASE</spring-context-support.version>
         <jedis.version>2.9.0</jedis.version>
+        <zookeeper.version>3.4.9</zookeeper.version>
     </properties>
 
     <dependencyManagement>
@@ -188,6 +189,13 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
+            </dependency>
+
+            <!-- Zookeeper -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
             </dependency>
 
         </dependencies>
