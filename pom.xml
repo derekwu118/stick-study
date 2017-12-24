@@ -19,6 +19,11 @@
         <module>stick-biz</module>
         <module>stick-common</module>
         <module>stick-deploy</module>
+        <module>stick-es</module>
+        <module>stick-jcu</module>
+        <module>stick-lock</module>
+        <module>stick-mq</module>
+        <module>stick-netty</module>
         <module>stick-quartz</module>
         <module>stick-test</module>
     </modules>

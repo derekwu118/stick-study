@@ -60,6 +60,7 @@
         <option value="$PROJECT_DIR$/stick-es/pom.xml" />
         <option value="$PROJECT_DIR$/stick-netty/pom.xml" />
         <option value="$PROJECT_DIR$/stick-mq/pom.xml" />
+        <option value="$PROJECT_DIR$/stick-jcu/pom.xml" />
       </list>
     </option>
   </component>

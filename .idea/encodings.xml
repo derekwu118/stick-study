@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/stick-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-deploy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-es" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stick-jcu" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-lock" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-mq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-netty" charset="UTF-8" />

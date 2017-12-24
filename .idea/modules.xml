@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/stick-common/stick-common.iml" filepath="$PROJECT_DIR$/stick-common/stick-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/stick-deploy/stick-deploy.iml" filepath="$PROJECT_DIR$/stick-deploy/stick-deploy.iml" />
       <module fileurl="file://$PROJECT_DIR$/stick-es/stick-es.iml" filepath="$PROJECT_DIR$/stick-es/stick-es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stick-jcu/stick-jcu.iml" filepath="$PROJECT_DIR$/stick-jcu/stick-jcu.iml" />
       <module fileurl="file://$PROJECT_DIR$/stick-lock/stick-lock.iml" filepath="$PROJECT_DIR$/stick-lock/stick-lock.iml" />
       <module fileurl="file://$PROJECT_DIR$/stick-mq/stick-mq.iml" filepath="$PROJECT_DIR$/stick-mq/stick-mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/stick-netty/stick-netty.iml" filepath="$PROJECT_DIR$/stick-netty/stick-netty.iml" />

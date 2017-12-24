@@ -11,6 +11,7 @@
         <module name="stick-common" />
         <module name="stick-deploy" />
         <module name="stick-es" />
+        <module name="stick-jcu" />
         <module name="stick-lock" />
         <module name="stick-mq" />
         <module name="stick-netty" />
@@ -25,6 +26,7 @@
       <module name="stick-common" target="1.8" />
       <module name="stick-deploy" target="1.8" />
       <module name="stick-es" target="1.8" />
+      <module name="stick-jcu" target="1.8" />
       <module name="stick-lock" target="1.8" />
       <module name="stick-mq" target="1.8" />
       <module name="stick-netty" target="1.8" />

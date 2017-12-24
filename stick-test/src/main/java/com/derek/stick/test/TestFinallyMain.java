@@ -26,6 +26,13 @@ public class TestFinallyMain {
         // case 4
         println("\ncase 4: ");
         test4();
+        // case 5
+        println("\ncase 5: ");
+        test5();
+        // case 6
+        println("\ncase 6: ");
+        test6();
+
     }
 
     private static void println(String s) {
@@ -101,6 +108,7 @@ public class TestFinallyMain {
             return b += 80;
         } catch (Exception e) {
             println("catch block");
+            return b;
         } finally {
             println("finally block");
             if (b > 25) {
@@ -108,6 +116,53 @@ public class TestFinallyMain {
             }
             b = 10;
         }
-        return b;
+    }
+
+    private static void test5() {
+        println(test5Fun().getName());
+    }
+
+    private static Person test5Fun() {
+        Person p = new Person();
+        try {
+            p.setName("Try");
+            return p;
+        } catch (Exception e) {
+            p.setName("Catch");
+            return p;
+        } finally {
+            p.setName("Finally");
+        }
+    }
+
+    private static void test6() {
+        println(test5Fun().getName());
+    }
+
+    private static Person test6Fun() {
+        Person p = new Person();
+        try {
+            p.setName("Try");
+            return p;
+        } catch (Exception e) {
+            p.setName("Catch");
+            return p;
+        } finally {
+            p.setName("Finally");
+            p = null;
+        }
+    }
+
+    private static class Person {
+
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
