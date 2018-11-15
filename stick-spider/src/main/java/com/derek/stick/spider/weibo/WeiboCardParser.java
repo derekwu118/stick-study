@@ -30,6 +30,7 @@ public class WeiboCardParser {
         info.setScheme(jsonObject.getString("scheme"));
         info.setShowType(jsonObject.getInteger("show_type"));
         info.setMblog(parseMblob(jsonObject.get("mblog")));
+        info.setOriginalContent(SerializableTool.serialize(obj));
         return info;
     }
 

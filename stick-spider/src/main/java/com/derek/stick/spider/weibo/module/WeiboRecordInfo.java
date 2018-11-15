@@ -8,6 +8,11 @@ package com.derek.stick.spider.weibo.module;
 public class WeiboRecordInfo {
 
     /**
+     * 原始response文本
+     */
+    private String  originalContent;
+
+    /**
      * card_type = 9 是我们所需要的
      */
     private Integer cardType;
@@ -66,5 +71,13 @@ public class WeiboRecordInfo {
 
     public void setMblog(Mblog mblog) {
         this.mblog = mblog;
+    }
+
+    public String getOriginalContent() {
+        return originalContent;
+    }
+
+    public void setOriginalContent(String originalContent) {
+        this.originalContent = originalContent;
     }
 }

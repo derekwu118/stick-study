@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.derek.stick.common.util.http.HttpConfiguration;
 import com.derek.stick.common.util.http.HttpResult;
 import com.derek.stick.common.util.http.HttpTinyTool;
+import com.derek.stick.spider.weibo.module.CommentInfo;
 import com.derek.stick.spider.weibo.module.WeiboRecordInfo;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
@@ -23,6 +24,7 @@ public class WeiboSpider {
     private static final String COMMENT_URL  = "https://m.weibo.cn/comments/hotflow";
 
     private HttpTinyTool        httpTinyTool;
+    private WeiboDbWriter       dbWriter;
 
     private String              uid;
     private String              containerId;
@@ -33,6 +35,12 @@ public class WeiboSpider {
         this.uid = uid;
         this.containerId = containerId;
         httpTinyTool = new HttpTinyTool(new HttpConfiguration());
+    }
+
+    public WeiboSpider(String uid, String containerId, WeiboDbWriter dbWriter) {
+        this(uid, containerId);
+        Preconditions.checkNotNull(dbWriter, "dbWriter cannot be null.");
+        this.dbWriter = dbWriter;
     }
 
     public List<WeiboRecordInfo> getPage(int page) {
@@ -58,6 +66,71 @@ public class WeiboSpider {
             }
         }
         return recordInfoList;
+    }
+
+    public void getPageAndWrite2Db(int page) {
+        HttpResult result = httpTinyTool.httpGet(CARD_REQ_URL, buildGetIndexParams(uid, containerId, page),
+                                                 getHeaders(uid));
+        if (!result.isSuccessful()) {
+            return;
+        }
+        JSONObject data = JSONObject.parseObject(result.getContent());
+        JSONObject innerData = data.getJSONObject("data");
+        if (innerData == null) {
+            return;
+        }
+        List<Object> cardObjList = innerData.getJSONArray("cards");
+        if (cardObjList == null || cardObjList.size() == 0) {
+            return;
+        }
+        for (Object cardObj : cardObjList) {
+            WeiboRecordInfo recordInfo = WeiboCardParser.parse(cardObj);
+            if (recordInfo != null && recordInfo.getMblog() != null) {
+                Long dbId = dbWriter.writeWeiboRecord(recordInfo);
+                if (dbId != null) {
+                    // 查询评论 （TODO by derek.wq: 异步线程查询评论，线程池控制）
+                    iterateComments(dbId, recordInfo.getMblog().getId(), recordInfo.getMblog().getMid(), null, 0);
+                }
+            }
+        }
+    }
+
+    /**
+     * 迭代的获取评论
+     * 
+     * @param
+     * @return void
+     * @since v1.0.0
+     * 
+     * <PRE>
+     * author: derek.wu
+     * Date: 2018-11-15
+     * </PRE>
+     */
+    public void iterateComments(Long dbId, String id, String mid, Long maxId, Integer maxIdType) {
+        if (id == null || mid == null) {
+            return;
+        }
+        HttpResult result = httpTinyTool.httpGet(COMMENT_URL, buildGetCommentParams(id, mid, maxId, maxIdType),
+                                                 getHeaders(uid));
+        if (!result.isSuccessful()) {
+            return;
+        }
+        JSONObject data = JSONObject.parseObject(result.getContent());
+        JSONObject innerData = data.getJSONObject("data");
+        if (innerData == null) {
+            return;
+        }
+        CommentInfo commentInfo = CommentParser.parse(innerData);
+        if (commentInfo == null) {
+            return;
+        }
+        // 写db
+        dbWriter.writeComment(dbId, id, mid, commentInfo);
+        if (commentInfo.getMaxId() != null && commentInfo.getMaxId() > 0) {
+            // maxId > 0 ， 继续迭代查询评论
+            iterateComments(dbId, id, mid, commentInfo.getMaxId(), commentInfo.getMaxIdType());
+        }
     }
 
     private Map<String, String> buildGetIndexParams(String uid, String containerId, int page) {

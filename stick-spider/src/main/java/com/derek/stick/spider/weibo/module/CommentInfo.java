@@ -10,6 +10,11 @@ import java.util.List;
 public class CommentInfo {
 
     /**
+     * 原始response文本
+     */
+    private String            originalContent;
+
+    /**
      * max
      */
     private Long              max;
@@ -20,13 +25,23 @@ public class CommentInfo {
     /**
      * max_id_type
      */
-    private Long              maxIdType;
+    private Integer           maxIdType;
     /**
      * status
      */
     private Status            status;
-
+    /**
+     * 
+     */
     private List<CommentItem> commentItemList;
+
+    public String getOriginalContent() {
+        return originalContent;
+    }
+
+    public void setOriginalContent(String originalContent) {
+        this.originalContent = originalContent;
+    }
 
     public Long getMax() {
         return max;
@@ -44,11 +59,11 @@ public class CommentInfo {
         this.maxId = maxId;
     }
 
-    public Long getMaxIdType() {
+    public Integer getMaxIdType() {
         return maxIdType;
     }
 
-    public void setMaxIdType(Long maxIdType) {
+    public void setMaxIdType(Integer maxIdType) {
         this.maxIdType = maxIdType;
     }
 
@@ -73,11 +88,227 @@ public class CommentInfo {
         /**
          * bid
          */
-        private String   bid;
+        private String           bid;
         /**
-         * comments
+         * comments instance Boolean
          */
-        private Boolean  comments;
+        private Boolean          comments;
+        /**
+         * comments instance of List
+         */
+        private List<SubComment> subComments;
+        /**
+         * created_at
+         */
+        private String           createdAt;
+        /**
+         * disable_reply
+         */
+        private Integer          disableReply;
+        /**
+         * floor_number
+         */
+        private Long             floorNumber;
+        /**
+         * id
+         */
+        private String           id;
+        /**
+         * isLikedByMblogAuthor
+         */
+        private Boolean          isLikedByMblogAuthor;
+        /**
+         * like_count
+         */
+        private Long             likeCount;
+        /**
+         * liked
+         */
+        private Boolean          liked;
+        /**
+         * max_id
+         */
+        private Long             maxId;
+        /**
+         * mid
+         */
+        private String           mid;
+        /**
+         * more_info_type
+         */
+        private Integer          moreInfoType;
+        /**
+         * rootid
+         */
+        private String           rootId;
+        /**
+         * source
+         */
+        private String           source;
+        /**
+         * text
+         */
+        private String           text;
+        /**
+         * total_number
+         */
+        private Integer          totalNumber;
+        /**
+         * user
+         */
+        private UserInfo         user;
+
+        public String getBid() {
+            return bid;
+        }
+
+        public void setBid(String bid) {
+            this.bid = bid;
+        }
+
+        public Boolean getComments() {
+            return comments;
+        }
+
+        public void setComments(Boolean comments) {
+            this.comments = comments;
+        }
+
+        public List<SubComment> getSubComments() {
+            return subComments;
+        }
+
+        public void setSubComments(List<SubComment> subComments) {
+            this.subComments = subComments;
+        }
+
+        public String getCreatedAt() {
+            return createdAt;
+        }
+
+        public void setCreatedAt(String createdAt) {
+            this.createdAt = createdAt;
+        }
+
+        public Integer getDisableReply() {
+            return disableReply;
+        }
+
+        public void setDisableReply(Integer disableReply) {
+            this.disableReply = disableReply;
+        }
+
+        public Long getFloorNumber() {
+            return floorNumber;
+        }
+
+        public void setFloorNumber(Long floorNumber) {
+            this.floorNumber = floorNumber;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public Boolean getLikedByMblogAuthor() {
+            return isLikedByMblogAuthor;
+        }
+
+        public void setLikedByMblogAuthor(Boolean likedByMblogAuthor) {
+            isLikedByMblogAuthor = likedByMblogAuthor;
+        }
+
+        public Long getLikeCount() {
+            return likeCount;
+        }
+
+        public void setLikeCount(Long likeCount) {
+            this.likeCount = likeCount;
+        }
+
+        public Boolean getLiked() {
+            return liked;
+        }
+
+        public void setLiked(Boolean liked) {
+            this.liked = liked;
+        }
+
+        public Long getMaxId() {
+            return maxId;
+        }
+
+        public void setMaxId(Long maxId) {
+            this.maxId = maxId;
+        }
+
+        public String getMid() {
+            return mid;
+        }
+
+        public void setMid(String mid) {
+            this.mid = mid;
+        }
+
+        public Integer getMoreInfoType() {
+            return moreInfoType;
+        }
+
+        public void setMoreInfoType(Integer moreInfoType) {
+            this.moreInfoType = moreInfoType;
+        }
+
+        public String getRootId() {
+            return rootId;
+        }
+
+        public void setRootId(String rootId) {
+            this.rootId = rootId;
+        }
+
+        public String getSource() {
+            return source;
+        }
+
+        public void setSource(String source) {
+            this.source = source;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
+
+        public Integer getTotalNumber() {
+            return totalNumber;
+        }
+
+        public void setTotalNumber(Integer totalNumber) {
+            this.totalNumber = totalNumber;
+        }
+
+        public UserInfo getUser() {
+            return user;
+        }
+
+        public void setUser(UserInfo user) {
+            this.user = user;
+        }
+    }
+
+    public static class SubComment {
+
+        /**
+         * bid
+         */
+        private String   bid;
         /**
          * created_at
          */
@@ -89,39 +320,23 @@ public class CommentInfo {
         /**
          * floor_number
          */
-        private Long     floorNumber;
+        private Integer  floorNumber;
         /**
          * id
          */
         private String   id;
         /**
-         * isLikedByMblogAuthor
-         */
-        private Boolean  isLikedByMblogAuthor;
-        /**
-         * like_count
-         */
-        private Long     likeCount;
-        /**
-         * liked
-         */
-        private Boolean  liked;
-        /**
-         * max_id
-         */
-        private Long     maxId;
-        /**
          * mid
          */
         private String   mid;
         /**
-         * more_info_type
-         */
-        private Integer  moreInfoType;
-        /**
          * rootid
          */
         private String   rootId;
+        /**
+         * shouldShowColon
+         */
+        private Integer  shouldShowColon;
         /**
          * source
          */
@@ -131,16 +346,100 @@ public class CommentInfo {
          */
         private String   text;
         /**
-         * total_number
-         */
-        private Integer  totalNumber;
-        /**
          * user
          */
         private UserInfo user;
+
+        public String getBid() {
+            return bid;
+        }
+
+        public void setBid(String bid) {
+            this.bid = bid;
+        }
+
+        public String getCreatedAt() {
+            return createdAt;
+        }
+
+        public void setCreatedAt(String createdAt) {
+            this.createdAt = createdAt;
+        }
+
+        public Integer getDisableReply() {
+            return disableReply;
+        }
+
+        public void setDisableReply(Integer disableReply) {
+            this.disableReply = disableReply;
+        }
+
+        public Integer getFloorNumber() {
+            return floorNumber;
+        }
+
+        public void setFloorNumber(Integer floorNumber) {
+            this.floorNumber = floorNumber;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public String getMid() {
+            return mid;
+        }
+
+        public void setMid(String mid) {
+            this.mid = mid;
+        }
+
+        public String getRootId() {
+            return rootId;
+        }
+
+        public void setRootId(String rootId) {
+            this.rootId = rootId;
+        }
+
+        public Integer getShouldShowColon() {
+            return shouldShowColon;
+        }
+
+        public void setShouldShowColon(Integer shouldShowColon) {
+            this.shouldShowColon = shouldShowColon;
+        }
+
+        public String getSource() {
+            return source;
+        }
+
+        public void setSource(String source) {
+            this.source = source;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
+
+        public UserInfo getUser() {
+            return user;
+        }
+
+        public void setUser(UserInfo user) {
+            this.user = user;
+        }
     }
 
-    private static class UserInfo {
+    public static class UserInfo {
 
         /**
          * avatar_hd

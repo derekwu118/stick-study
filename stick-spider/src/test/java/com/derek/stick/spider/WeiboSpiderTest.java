@@ -5,8 +5,11 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.derek.stick.common.serialize.SerializableTool;
 import com.derek.stick.spider.common.ImageDownloader;
+import com.derek.stick.spider.weibo.WeiboDbWriter;
 import com.derek.stick.spider.weibo.WeiboSpider;
+import com.derek.stick.spider.weibo.module.CommentInfo;
 import com.derek.stick.spider.weibo.module.Mblog;
 import com.derek.stick.spider.weibo.module.WeiboRecordInfo;
 
@@ -30,7 +33,22 @@ public class WeiboSpiderTest {
 
     @Before
     public void before() {
-        spider = new WeiboSpider(uid, containerId);
+        spider = new WeiboSpider(uid, containerId, new WeiboDbWriter() {
+
+            @Override
+            public Long writeWeiboRecord(WeiboRecordInfo recordInfo) {
+                System.out.println("\n\n==========> weibo card: ============");
+                System.out.println(SerializableTool.serializeFormat(recordInfo));
+                return 1L;
+            }
+
+            @Override
+            public void writeComment(Long dbId, String recordId, String recordMid, CommentInfo commentInfo) {
+                System.out.println(String.format("\tdbId: %s | id: %s | mid: %s | comment: %s", dbId, recordId,
+                                                 recordMid, SerializableTool.serializeFormat(commentInfo)));
+            }
+        });
+
         downloader = new ImageDownloader(picDir + "/" + uid);
     }
 
@@ -52,6 +70,11 @@ public class WeiboSpiderTest {
     public void testGetPage() {
         List<WeiboRecordInfo> recordInfoList = getPage(1);
         savePics(recordInfoList);
+    }
+
+    @Test
+    public void testGetCardAndComment() {
+        spider.getPageAndWrite2Db(0);
     }
 
     private List<WeiboRecordInfo> getPage(int no) {

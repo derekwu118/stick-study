@@ -2,54 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8fd5b49-bb5a-40f0-a0fb-6eb485ce1ba5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Derek.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql-script/01_ddl.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpTinyTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-common/src/test/java/com/derek/stick/common/HttpTinyToolTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dao/stick-dao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/common/ImageDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/Mblog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/stick-spider.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-test/src/main/java/com/derek/stick/test/queue/MFQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-test/src/main/java/com/derek/stick/test/queue/MFQueueBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-test/src/main/java/com/derek/stick/test/queue/MFQueueIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-test/src/main/java/com/derek/stick/test/queue/MFQueuePool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/CommentParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboDbWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-api/stick-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-api/stick-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-biz/stick-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-biz/stick-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-common/stick-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-common/stick-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-deploy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-deploy/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-deploy/stick-deploy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-deploy/stick-deploy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-es/stick-es.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-es/stick-es.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-jcu/stick-jcu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-jcu/stick-jcu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-lock/stick-lock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-lock/stick-lock.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-mq/stick-mq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-mq/stick-mq.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-netty/stick-netty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-netty/stick-netty.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-quartz/stick-quartz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-quartz/stick-quartz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-test/stick-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-test/stick-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,18 +53,18 @@
     <session id="-1092019477">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
           <entry key="iml" value="1" />
-          <entry key="java" value="24" />
+          <entry key="java" value="37" />
           <entry key="pom" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="17" />
@@ -114,21 +74,21 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="37" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7184" />
+          <entry key="java" value="11276" />
           <entry key="sql" value="329" />
           <entry key="xml" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7184" />
+          <entry key="JAVA" value="11276" />
           <entry key="SQL" value="329" />
           <entry key="XML" value="87" />
         </counts>
@@ -136,12 +96,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state relative-caret-position="74">
+              <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,33 +110,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java">
+        <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboDbWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="200">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#5016#5017#0" expanded="true" />
-                <element signature="e#5070#5071#0" expanded="true" />
-                <element signature="e#6234#6235#0" expanded="true" />
-                <element signature="e#6278#6279#0" expanded="true" />
-                <element signature="e#6972#6973#0" expanded="true" />
-                <element signature="e#7024#7025#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpTinyTool.java">
+        <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="383">
+              <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -184,10 +133,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+            <state relative-caret-position="386">
+              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2421#2422#0" expanded="true" />
+                <element signature="e#2442#2443#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="12" column="36" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="36" />
               <folding>
                 <element signature="e#497#498#0" expanded="true" />
                 <element signature="e#528#529#0" expanded="true" />
@@ -219,6 +170,10 @@
                 <element signature="e#1116#1117#0" expanded="true" />
                 <element signature="e#1157#1158#0" expanded="true" />
                 <element signature="e#1191#1192#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1345#1346#0" expanded="true" />
+                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/Mblog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="349">
+              <caret line="122" column="7" lean-forward="true" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
               <folding>
                 <element signature="e#2129#2130#0" expanded="true" />
                 <element signature="e#2154#2155#0" expanded="true" />
@@ -278,22 +233,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/common/ImageDownloader.java">
+        <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="309">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#823#824#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar!/org/apache/commons/io/IOUtils.class">
+        <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/CommentParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state relative-caret-position="222">
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -303,9 +266,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -334,9 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/mysql/StickMySqlLockBO.java" />
-        <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/mysql/dal/StickLockDO.java" />
-        <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/mysql/dal/StickLockDAO.java" />
         <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/mysql/MySqlLockUtil.java" />
         <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/mysql/service/MySqlLockService.java" />
         <option value="$PROJECT_DIR$/stick-lock/src/main/resources/mapper/StickLockMapper.xml" />
@@ -373,17 +333,20 @@
         <option value="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpResult.java" />
         <option value="$PROJECT_DIR$/stick-common/pom.xml" />
         <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboRecordInfo.java" />
-        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java" />
         <option value="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/WeiboCardParser.java" />
         <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/Mblog.java" />
-        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java" />
         <option value="$PROJECT_DIR$/stick-common/src/test/java/com/derek/stick/common/HttpTinyToolTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/stick-spider/pom.xml" />
         <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/common/ImageDownloader.java" />
-        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java" />
-        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java" />
         <option value="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpTinyTool.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboInDbService.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboDbWriter.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/CommentParser.java" />
+        <option value="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java" />
         <option value="$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java" />
       </list>
     </option>
@@ -462,7 +425,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -473,11 +436,6 @@
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stick-study" type="462c0819:PsiDirectoryNode" />
               <item name="stick-spider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -519,17 +477,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spider" type="462c0819:PsiDirectoryNode" />
               <item name="weibo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-spider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spider" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
@@ -559,7 +506,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -572,7 +519,7 @@
     <property name="SearchEverywhereHistoryKey" value="RequestBody&#9;FILE&#9;jar:///Users/Derek/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar!/okhttp3/RequestBody.class&#10;Sys&#9;FILE&#9;jar:///Users/Derek/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar!/org/apache/commons/lang3/SystemUtils.class&#10;AbstractQueuedSynchronizer&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractQueuedSynchronizer&#10;ThreadPoolEx&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor&#10;Precondi&#9;PSI&#9;JAVA://com.google.common.base.Preconditions" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542223462186" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542298888115" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -598,7 +545,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WeiboSpiderTest.testPages">
+  <component name="RunManager" selected="JUnit.WeiboSpiderTest.testGetCardAndComment">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -743,7 +690,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeiboSpiderTest.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WeiboSpiderTest.testGetCardAndComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stick-spider" />
       <extension name="coverage">
         <pattern>
@@ -753,7 +700,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.derek.stick.spider" />
       <option name="MAIN_CLASS_NAME" value="com.derek.stick.spider.WeiboSpiderTest" />
-      <option name="METHOD_NAME" value="testGetPage" />
+      <option name="METHOD_NAME" value="testGetCardAndComment" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -857,19 +804,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.WeiboSpiderTest.testGetPage" />
       <item itemvalue="Application.WeiboSpider" />
       <item itemvalue="Application.HttpTinyToolTest" />
       <item itemvalue="JUnit.WeiboSpiderTest" />
       <item itemvalue="JUnit.WeiboSpiderTest.testPages" />
+      <item itemvalue="JUnit.WeiboSpiderTest.testGetCardAndComment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WeiboSpiderTest.testGetCardAndComment" />
         <item itemvalue="JUnit.WeiboSpiderTest.testPages" />
         <item itemvalue="JUnit.WeiboSpiderTest" />
         <item itemvalue="Application.WeiboSpider" />
         <item itemvalue="Application.HttpTinyToolTest" />
-        <item itemvalue="JUnit.WeiboSpiderTest.testGetPage" />
       </list>
     </recent_temporary>
   </component>
@@ -893,7 +840,8 @@
       <workItem from="1540125326474" duration="971000" />
       <workItem from="1542210227137" duration="12058000" />
       <workItem from="1542224790961" duration="820000" />
-      <workItem from="1542259700750" duration="987000" />
+      <workItem from="1542259700750" duration="1272000" />
+      <workItem from="1542294112457" duration="4457000" />
     </task>
     <servers />
   </component>
@@ -930,12 +878,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67036000" />
+    <option name="totallyTimeSpent" value="71778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1423462" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -946,7 +895,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32678822" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.52734923" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52734923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -971,7 +920,7 @@
       <window_info anchor="right" id="Maven Projects" order="10" weight="0.27209798" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -982,16 +931,16 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32678822" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47545582" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52734923" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32819074" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32959327" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1018,16 +967,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stick-jcu/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stick-jcu/src/main/java/com/derek/stick/jcu/package-info.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/stick-jcu/src/main/java/com/derek/stick/jcu/sync.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1247,13 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1586">
-          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar!/okhttp3/Headers.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2339">
@@ -1325,67 +1257,37 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/common.java" />
-    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java">
+    <entry file="file://$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpTinyTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="110">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar!/org/apache/commons/io/IOUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
-            <element signature="e#5070#5071#0" expanded="true" />
-            <element signature="e#6234#6235#0" expanded="true" />
-            <element signature="e#6278#6279#0" expanded="true" />
-            <element signature="e#6972#6973#0" expanded="true" />
-            <element signature="e#7024#7025#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="599">
+          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java">
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/common/ImageDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="1052">
+          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
           <folding>
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/Mblog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="349">
+          <caret line="122" column="7" lean-forward="true" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
           <folding>
             <element signature="e#2129#2130#0" expanded="true" />
             <element signature="e#2154#2155#0" expanded="true" />
@@ -1433,27 +1335,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/common/ImageDownloader.java">
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/WeiboRecordInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="12" column="36" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboCardParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboDbWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar!/org/apache/commons/io/IOUtils.class">
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/module/CommentInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        <state relative-caret-position="309">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpTinyTool.java">
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/CommentParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="222">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/weibo/WeiboSpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1462,10 +1422,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="386">
+          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
           </folding>
         </state>
       </provider>
