@@ -9,6 +9,7 @@
         <module name="stick-api" />
         <module name="stick-biz" />
         <module name="stick-common" />
+        <module name="stick-dao" />
         <module name="stick-deploy" />
         <module name="stick-es" />
         <module name="stick-jcu" />
@@ -16,6 +17,7 @@
         <module name="stick-mq" />
         <module name="stick-netty" />
         <module name="stick-quartz" />
+        <module name="stick-spider" />
         <module name="stick-study" />
         <module name="stick-test" />
       </profile>
@@ -24,6 +26,7 @@
       <module name="stick-api" target="1.8" />
       <module name="stick-biz" target="1.8" />
       <module name="stick-common" target="1.8" />
+      <module name="stick-dao" target="1.8" />
       <module name="stick-deploy" target="1.8" />
       <module name="stick-es" target="1.8" />
       <module name="stick-jcu" target="1.8" />
@@ -31,6 +34,7 @@
       <module name="stick-mq" target="1.8" />
       <module name="stick-netty" target="1.8" />
       <module name="stick-quartz" target="1.8" />
+      <module name="stick-spider" target="1.8" />
       <module name="stick-study" target="1.8" />
       <module name="stick-test" target="1.8" />
     </bytecodeTargetLevel>

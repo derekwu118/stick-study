@@ -23,7 +23,6 @@
         <module>stick-jcu</module>
         <module>stick-lock</module>
         <module>stick-mq</module>
-        <module>stick-netty</module>
         <module>stick-quartz</module>
         <module>stick-test</module>
     </modules>
@@ -73,6 +72,11 @@
             <dependency>
                 <groupId>com.derek.stick</groupId>
                 <artifactId>stick-api</artifactId>
+                <version>${stick.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.derek.stick</groupId>
+                <artifactId>stick-dao</artifactId>
                 <version>${stick.version}</version>
             </dependency>
 

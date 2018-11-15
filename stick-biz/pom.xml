@@ -16,6 +16,7 @@
             <groupId>com.derek.stick</groupId>
             <artifactId>stick-common</artifactId>
         </dependency>
+        
     </dependencies>
 
     <build>

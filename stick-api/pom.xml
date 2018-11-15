@@ -11,6 +11,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>stick-api</artifactId>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.derek.stick</groupId>
+            <artifactId>stick-biz</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
