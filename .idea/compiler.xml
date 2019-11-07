@@ -11,6 +11,7 @@
         <module name="stick-common" />
         <module name="stick-dao" />
         <module name="stick-deploy" />
+        <module name="stick-dynamic-proxy" />
         <module name="stick-es" />
         <module name="stick-jcu" />
         <module name="stick-lock" />
@@ -18,7 +19,6 @@
         <module name="stick-netty" />
         <module name="stick-quartz" />
         <module name="stick-spider" />
-        <module name="stick-study" />
         <module name="stick-test" />
       </profile>
     </annotationProcessing>
@@ -28,6 +28,7 @@
       <module name="stick-common" target="1.8" />
       <module name="stick-dao" target="1.8" />
       <module name="stick-deploy" target="1.8" />
+      <module name="stick-dynamic-proxy" target="1.8" />
       <module name="stick-es" target="1.8" />
       <module name="stick-jcu" target="1.8" />
       <module name="stick-lock" target="1.8" />

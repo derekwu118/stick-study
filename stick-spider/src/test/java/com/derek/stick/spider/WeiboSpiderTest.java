@@ -23,10 +23,10 @@ public class WeiboSpiderTest {
 //    private String          uid         = "1798058151";
 //    private String          containerId = "1076031798058151";
 
-    private String          uid         = "5834408758";
-    private String          containerId = "1076035834408758";
+    private String          uid         = "3196649034";
+    private String          containerId = "1076033196649034";
 
-    private String          picDir      = "/Volumes/My Passport/spider/weibo/20181115";
+    private String          picDir      = "/Volumes/MyPassport/spider/weibo/20181116";
 
     private WeiboSpider     spider;
     private ImageDownloader downloader;
