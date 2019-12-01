@@ -2,32 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8fd5b49-bb5a-40f0-a0fb-6eb485ce1ba5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/cglib/SampleClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/JdkDynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/SubjectImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-dynamic-proxy/stick-dynamic-proxy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/sql/weiboInDb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-sample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/HeapOom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackSOF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stick-sample/stick-sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Derek.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Derek.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-api/stick-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-api/stick-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-biz/stick-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-biz/stick-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-lock/stick-lock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-lock/stick-lock.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-netty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-netty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-quartz/stick-quartz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-quartz/stick-quartz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/src/test/java/com/derek/stick/spider/WeiboSpiderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-spider/stick-spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/stick-spider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-spider/target/test-classes/com/derek/stick/spider/WeiboSpiderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/stick-spider/target/test-classes/com/derek/stick/spider/WeiboSpiderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stick-test/stick-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stick-test/stick-test.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,6 +30,7 @@
     <ignored path="$PROJECT_DIR$/stick-dao/target/" />
     <ignored path="$PROJECT_DIR$/stick-spider/target/" />
     <ignored path="$PROJECT_DIR$/stick-dynamic-proxy/target/" />
+    <ignored path="$PROJECT_DIR$/stick-sample/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +101,54 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-350080813">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="465" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="465" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/cglib/SampleClass.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stick-sample/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+            <state relative-caret-position="80">
+              <caret line="4" selection-start-line="3" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/HeapOom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,10 +157,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/Main.java">
+        <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackSOF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="89" />
+            <state relative-caret-position="380">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackOOM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="31" selection-end-column="1" />
+              <folding>
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,8 +183,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -176,9 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/CommonUtils.java" />
-        <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/redis/RedisClient.java" />
-        <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/redis/SingleRedisClient.java" />
         <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/redis/RedisClientConfig.java" />
         <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/redis/RedisService.java" />
         <option value="$PROJECT_DIR$/stick-lock/src/main/java/com/derek/stick/lock/redis/service/client/SingleRedisClient.java" />
@@ -227,6 +263,9 @@
         <option value="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/Main.java" />
         <option value="$PROJECT_DIR$/stick-dynamic-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/cglib/SampleClass.java" />
+        <option value="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/HeapOom.java" />
+        <option value="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackSOF.java" />
+        <option value="$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackOOM.java" />
       </list>
     </option>
   </component>
@@ -299,12 +338,14 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -316,43 +357,25 @@
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stick-sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="stick-sample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="stick-sample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="stick-sample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -360,74 +383,27 @@
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="stick-sample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dproxy" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="stick-sample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dproxy" type="462c0819:PsiDirectoryNode" />
-              <item name="cglib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stick-study" type="462c0819:PsiDirectoryNode" />
-              <item name="stick-dynamic-proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dproxy" type="462c0819:PsiDirectoryNode" />
-              <item name="jdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cglib:cglib:3.3.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cglib:cglib:3.3.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="cglib-3.3.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cglib:cglib:3.3.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="cglib-3.3.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cglib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cglib:cglib:3.3.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="cglib-3.3.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cglib" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stick-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cglib:cglib:3.3.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="cglib-3.3.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cglib" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="oom" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +416,7 @@
     <property name="SearchEverywhereHistoryKey" value="RequestBody&#9;FILE&#9;jar:///Users/Derek/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar!/okhttp3/RequestBody.class&#10;Sys&#9;FILE&#9;jar:///Users/Derek/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar!/org/apache/commons/lang3/SystemUtils.class&#10;AbstractQueuedSynchronizer&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractQueuedSynchronizer&#10;ThreadPoolEx&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor&#10;Precondi&#9;PSI&#9;JAVA://com.google.common.base.Preconditions" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573104847018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573141859310" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -776,6 +752,7 @@
       <workItem from="1558364729485" duration="842000" />
       <workItem from="1572599404881" duration="76000" />
       <workItem from="1573097090097" duration="3145000" />
+      <workItem from="1573139621804" duration="756000" />
     </task>
     <servers />
   </component>
@@ -812,13 +789,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78446000" />
+    <option name="totallyTimeSpent" value="79202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3025751" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30686694" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -901,41 +878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stick-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stick-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stick-biz/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stick-spider/src/main/java/com/derek/stick/spider/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stick-common/src/main/java/com/derek/stick/common/util/http/HttpResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar!/okhttp3/Headers.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2339">
@@ -1165,10 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#2463#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,19 +1185,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/Main.java">
+    <entry file="file://$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/cglib/SampleClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="89" />
+        <state relative-caret-position="168">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/cglib/SampleClass.java">
+    <entry file="file://$PROJECT_DIR$/stick-dynamic-proxy/src/main/java/com/derek/stick/dproxy/jdk/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+        <state relative-caret-position="180">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-sample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/HeapOom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackSOF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stick-sample/src/main/java/com/derek/stick/sample/oom/JavaVMStackOOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
           </folding>
         </state>
       </provider>

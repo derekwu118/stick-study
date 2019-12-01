@@ -27,6 +27,7 @@
         <module>stick-quartz</module>
         <module>stick-test</module>
         <module>stick-dynamic-proxy</module>
+        <module>stick-sample</module>
     </modules>
 
     <properties>

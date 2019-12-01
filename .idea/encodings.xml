@@ -14,6 +14,7 @@
     <file url="file://$PROJECT_DIR$/stick-mq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-netty" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stick-sample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-spider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stick-test" charset="UTF-8" />
   </component>

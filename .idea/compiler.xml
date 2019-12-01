@@ -18,6 +18,7 @@
         <module name="stick-mq" />
         <module name="stick-netty" />
         <module name="stick-quartz" />
+        <module name="stick-sample" />
         <module name="stick-spider" />
         <module name="stick-test" />
       </profile>
@@ -35,6 +36,7 @@
       <module name="stick-mq" target="1.8" />
       <module name="stick-netty" target="1.8" />
       <module name="stick-quartz" target="1.8" />
+      <module name="stick-sample" target="1.8" />
       <module name="stick-spider" target="1.8" />
       <module name="stick-study" target="1.8" />
       <module name="stick-test" target="1.8" />
