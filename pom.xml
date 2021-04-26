@@ -39,7 +39,7 @@
         <stick.version>1.0.0-SNAPSHOT</stick.version>
         <commons-lang3.version>3.6</commons-lang3.version>
         <commons-text.version>1.1</commons-text.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <commons-net.version>3.5</commons-net.version>
         <guava.version>20.0</guava.version>
         <joda-time.version>2.9.9</joda-time.version>
