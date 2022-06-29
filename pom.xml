@@ -57,7 +57,7 @@
         <quartz.version>2.2.3</quartz.version>
         <spring-context-support.version>4.3.9.RELEASE</spring-context-support.version>
         <jedis.version>2.9.0</jedis.version>
-        <zookeeper.version>3.4.9</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
     </properties>
 
     <dependencyManagement>
